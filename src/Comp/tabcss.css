@@ -1,0 +1,11 @@
+.button {
+  height: 100%;
+  width: 500;
+}
+.go:hover {
+  background-color: greenyellow;
+  padding: 3px;
+}
+.go:active {
+  background-color: greenyellow;
+}

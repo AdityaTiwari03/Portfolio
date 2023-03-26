@@ -1,0 +1,19 @@
+body {
+  margin-left: "130px";
+  margin-right: "130px";
+}
+.proj {
+  height: 50px;
+  width: 300px;
+  font-size: x-large;
+  border-radius: 40px;
+  cursor: pointer;
+}
+.proj:hover {
+  background: black;
+  color: white;
+}
+u:hover {
+  color: blue;
+  cursor: pointer;
+}

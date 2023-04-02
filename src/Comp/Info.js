@@ -1,44 +1,52 @@
-import React from "react";
+import React, {useState, useToggle} from "react";
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
+import pdf from "./Resume_Aditya.pdf";
 export default function Info() {
-  return (
+  const useToggle = (initialState) => {
+    const [toggleValue, setToggleValue] = useState(initialState);
+    const toggler = () => { setToggleValue(!toggleValue) };
+    return [toggleValue, toggler]
+  };
+  const [toggle, setToggle] = useToggle();
+   return (
     <div
       style={{
+        color: "white",
         width: 800,
-        border: "black",
+        borderColor: "black",
         position: "absolute",
-        left: 0,
-        height: 800,
+        left: 20,
+        height: 1000,
         marginTop: 50,
         textAlign: "center",
       }}
     >
       <p
         style={{
-          fontSize: 80,
-          marginLeft: 20,
+          fontSize: 90,
+          marginLeft: 40,
           fontWeight: "bold",
         }}
       >
         Aditya Tiwari
       </p>
-      <p style={{ marginTop: 0, fontSize: 40 }}>
+      <p style={{ marginTop: 0, fontSize: 50 }}>
         IIT Bhilai, Btech (2021-2025) <br />
         Computer Science and Engineering
-      </p>
+      </p> <div>
       <AwesomeButton
         type="github"
-        height="70px"
-        size="120"
-        fontSize="40"
-        width="100px"
-        onPress={() => {
-          window.open("https://github.com/AdityaTiwari03/Resume");
-        }}
+        zIndex = "3"
+        style={{height: 70, width: 350, fontSize: 20, borderColor: "white"}}
+        onPress={setToggle} 
       >
         <h1>View Portfolio</h1>
       </AwesomeButton>
+      </div>
+      {toggle &&(
+  <iframe src={pdf} id = "pdf" style= {{ width: 1200, height: 1130, zIndex: 0, display: "flex"}} ></iframe> 
+  )}
     </div>
   );
 }

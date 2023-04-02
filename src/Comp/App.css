@@ -10,8 +10,9 @@ body {
   cursor: pointer;
 }
 .proj:hover {
-  background: black;
-  color: white;
+  background: yellow;
+  color: black;
+  font-weight: bold;
 }
 u:hover {
   color: blue;

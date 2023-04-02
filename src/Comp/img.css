@@ -1,0 +1,8 @@
+.image{
+position: "absolute";
+max-width: 700;
+max-height: 1200;
+right: 3vh;
+z-Index: -1;
+
+}

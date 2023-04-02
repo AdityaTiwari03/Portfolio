@@ -8,12 +8,14 @@ export default function UpTab() {
         style={{
           display: "flex",
           listStyle: "none",
+          marginTop: 30,
+          paddingTop: 10,
           justifyContent: "space-around",
-          cursor: "pointer",
           fontSize: 30,
           overflow: "hidden",
           backgroundColor: "yellow",
           height: 50,
+          borderRadius: 30
         }}
       >
         <li cursor="pointer" className="go">

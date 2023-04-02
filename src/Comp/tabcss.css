@@ -3,9 +3,8 @@
   width: 500;
 }
 .go:hover {
-  background-color: greenyellow;
-  padding: 3px;
+  cursor: pointer;
+  color: red;
+  border: 2px black;  
 }
-.go:active {
-  background-color: greenyellow;
-}
+

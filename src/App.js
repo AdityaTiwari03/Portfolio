@@ -11,7 +11,7 @@ function App() {
       <Img /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
       <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
       <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
-      <br /> <br /> <br /> <br />
+      <br /> <br /> <br /> <br />  <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /><br /> <br /> <br /> <br /> 
       <MiddleSection />
     </div>
   );

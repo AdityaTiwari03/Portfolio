@@ -1,12 +1,9 @@
-import React, { Component } from "react";
+import React, {useState, Component, useEffect } from "react";
 import "./App.css";
-export default class MiddleSection extends Component {
-  render() {
-    function hi() {
-      window.open("https://github.com/AdityaTiwari03/Order");
-    }
-    return (
-      <div style={{ fontSize: 30, marginLeft: 130, marginRight: 130 }}>
+function MiddleSection() {
+  return (
+      <div style={{ fontSize: 30, marginLeft: 130, marginRight: 130, color: "white" }}>
+        
         <div id="home">
           <p>
             This is Aditya Tiwari, I am thriving to persue my career as Web
@@ -41,11 +38,12 @@ export default class MiddleSection extends Component {
           This is my personal Project that I developed using React, CSS and
           Javascript. I know Hindi and English. <br />
           <br />
-          <button className="proj" onClick={hi}>
+          <button className="proj"  onClick={() => {
+                window.open("https://adityatiwari03.github.io/Order/")}}>
             Go to my Project
-          </button>
+          </button> 
         </div>{" "}
-        <br />{" "}
+        
         <div id="extra" style={{ position: "absolute", right: 130 }}>
           <h2> Extra Curricular </h2>
           <ul>
@@ -111,4 +109,5 @@ export default class MiddleSection extends Component {
       </div>
     );
   }
-}
+
+export default MiddleSection;

@@ -2,7 +2,7 @@ import React, {useState, Component, useEffect } from "react";
 import "./App.css";
 function MiddleSection() {
   return (
-      <div style={{ fontSize: 30, marginLeft: 130, marginRight: 130, color: "white" }}>
+      <div style={{ fontSize: 30, marginLeft: 130, marginRight: 130, color: "white"}}>
         
         <div id="home">
           <p>
@@ -11,7 +11,6 @@ function MiddleSection() {
             Science and Engineering(2021-2025). I am natively form Indore.
           </p>
         </div>{" "}
-        <br />
         <div id="education">
           <h2>EDUCATION</h2>
           <ul>
@@ -43,21 +42,8 @@ function MiddleSection() {
             Go to my Project
           </button> 
         </div>{" "}
-        
-        <div id="extra" style={{ position: "absolute", right: 130 }}>
-          <h2> Extra Curricular </h2>
-          <ul>
-            <li>
-              Won Inter- School Acting <br />
-              Competition 2 times
-            </li>
-            <li>
-              Participated in many dance and <br /> acting events at college
-              level.
-            </li>
-          </ul>
-        </div>
-        <div id="skill">
+       <div className="do">
+        <div id="skill" className="skill" style={{flex: "50%", minWidth: 400}}>
           <h2>SKILLS</h2>
           <ul>
             <li>HTML</li>
@@ -73,22 +59,24 @@ function MiddleSection() {
             <li>Latex</li>
           </ul>
         </div>
-        <br />
-        <div id="Personal" style={{ position: "absolute", right: 130 }}>
-          <h2>Personal Information</h2>
+
+        <div id="extra" className="extra" style={{flex: "50%", minWidth: 400}}>
+          <h2> Extra Curricular </h2>
           <ul>
             <li>
-              <b>Date of Birth</b> - 2 Aug 2003{" "}
+              Won Inter- School Acting
+              Competition 2 times
             </li>
             <li>
-              <b>Father’s Name</b> - Mr.Prashant Tiwari
+              Participated in many dance and acting events at college
+              level.
             </li>
-            <li>
-              <b>Nationality</b> - Indian
-            </li>{" "}
           </ul>
         </div>
-        <div id="Contact">
+        </div>
+                <br />
+        <div className="do">
+          <div id="Contact" style={{flex: "50%"}}>
           <h2> Contact me</h2>
           <ul>
             <li>
@@ -106,6 +94,22 @@ function MiddleSection() {
             </li>
           </ul>
         </div>
+        <div id="Personal" style={{flex: "50%"}}>
+          <h2>Personal Information</h2>
+          <ul>
+            <li>
+              <b>Date of Birth</b> - 2 Aug 2003{" "}
+            </li>
+            <li>
+              <b>Father’s Name</b> - Mr.Prashant Tiwari
+            </li>
+            <li>
+              <b>Nationality</b> - Indian
+            </li>{" "}
+          </ul>
+          </div>
+        </div>
+        
       </div>
     );
   }

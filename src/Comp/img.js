@@ -7,10 +7,8 @@ export default function Img() {
         src={require("./q4.png")}
         alt="no"
         style={{
-          position: "absolute",
-          width: 750,
-          height: 850,
-          zIndex: -1
+          zIndex: -1,
+          right: 20
         }}
       />
     </div>

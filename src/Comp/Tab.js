@@ -3,9 +3,10 @@ import { Link } from "react-scroll";
 import "./tabcss.css";
 export default function UpTab() {
   return (
-    <div>
-      <ul
+    <div className="main">
+      <ul className="ul"
         style={{
+          backgroundColor: "yellow",
           display: "flex",
           listStyle: "none",
           marginTop: 30,
@@ -13,8 +14,6 @@ export default function UpTab() {
           justifyContent: "space-around",
           fontSize: 30,
           overflow: "hidden",
-          backgroundColor: "yellow",
-          height: 50,
           borderRadius: 30
         }}
       >

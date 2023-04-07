@@ -2,6 +2,7 @@ import React, {useState, useToggle} from "react";
 import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 import pdf from "./Resume_Aditya.pdf";
+import  "./info.css"
 export default function Info() {
   const useToggle = (initialState) => {
     const [toggleValue, setToggleValue] = useState(initialState);
@@ -9,8 +10,9 @@ export default function Info() {
     return [toggleValue, toggler]
   };
   const [toggle, setToggle] = useToggle();
+
    return (
-    <div
+    <div className="div"
       style={{
         color: "white",
         width: 800,
@@ -22,16 +24,11 @@ export default function Info() {
         textAlign: "center",
       }}
     >
-      <p
-        style={{
-          fontSize: 90,
-          marginLeft: 40,
-          fontWeight: "bold",
-        }}
+      <p className="naam"
       >
         Aditya Tiwari
       </p>
-      <p style={{ marginTop: 0, fontSize: 50 }}>
+      <p className="info">
         IIT Bhilai, Btech (2021-2025) <br />
         Computer Science and Engineering
       </p> <div>

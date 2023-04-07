@@ -8,10 +8,8 @@ function App() {
     <div className="App">
       <UpTab />
       <Info />
-      <Img /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
-      <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br />{" "}
-      <br /> <br /> <br /> <br />  <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /> <br /><br /> <br /> <br /> <br /> 
+      <Img /> <br /> <br /> <br /> <br /> 
+       
       <MiddleSection />
     </div>
   );

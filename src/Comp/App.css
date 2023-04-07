@@ -18,3 +18,12 @@ u:hover {
   color: blue;
   cursor: pointer;
 }
+@media (max-width: 1500) {
+  .do {
+    flex-direction: column;
+  }
+}
+.do{
+  display: flex;
+  flex-direction: row;
+}

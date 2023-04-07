@@ -1,0 +1,14 @@
+.naam{
+margin-top: center;
+font-Size: 130px;
+align-self: center;
+font-weight: "bold";
+  }
+.info{
+    margin-top: 0;
+    font-size: 50px ;
+}
+.do{
+    display: flex;
+    flex-wrap: wrap;
+}

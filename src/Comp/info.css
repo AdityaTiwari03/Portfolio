@@ -1,35 +1,35 @@
-.div {
-  overflow: visible;
+.content {
   display: flex;
+  flex-direction: row;
   background-color: black;
   color: white;
-  width: 94vw;
+  width: 100%;
   border: 1px solid black;
   position: absolute;
   left: 20px;
-  height: 110vh;
   text-align: center;
 }
 
 .info-container {
   display: block;
-  width: 60%;
+  width: 50%;
 }
 
-.naam {
-  text-align: left;
-  font-size: 80px;
+.name {
+  text-align: center;
+  font-size: 50px;
 }
 
 .info {
-  text-align: left;
-  font-size: 40px;
+  text-align: center;
+  font-size: 30px;
 }
 
 .button-container {
   display: flex;
   justify-content: center;
   width: 30vw;
+  margin: auto;
 }
 
 .pdf-frame {
@@ -39,7 +39,7 @@
 }
 
 .photo {
-  text-align: right;
+  align-self: flex-end;
 }
 
 @media (max-width: 820px) {

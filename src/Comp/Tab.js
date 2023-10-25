@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import { Link } from "react-scroll";
 import "./tabcss.css";
 export default function UpTab() {
-  const [navbarHeight, setNavbarHeight] = useState('30px');
+  const [navbarHeight, setNavbarHeight] = useState('20px');
 
   const handleClick = () => {
     setNavbarHeight((prevHeight) => (prevHeight === '30px' ? 'fit-content' : '30px'));
@@ -11,6 +11,7 @@ export default function UpTab() {
 
   return (
     <div className="main">
+          <br/>
       <ul className="navbar" style={{ height: navbarHeight }} >
         <li className="navbar-item">
           <Link activeClass="active" to="home" spy={true} smooth={true} onClick={handleClick}>

@@ -2,7 +2,7 @@ import React, {useState, Component, useEffect } from "react";
 import "./App.css";
 function MiddleSection() {
   return (
-      <div style={{ fontSize: 30, marginLeft: 100, marginRight: 100, color: "white", marginTop: "110vh"}}>
+      <div style={{ fontSize: 30, color: "white", marginTop: "110vh"}}>
         
         <div id="home">
           <p>

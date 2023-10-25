@@ -13,9 +13,9 @@ export default function Info() {
   const [toggle, setToggle] = useToggle();
 
    return (
-    <div className="div">
+    <div className="content">
       <div className="info-container">
-        <p className="naam">Aditya Tiwari</p>
+        <p className="name">Aditya Tiwari</p>
         <p className="info">
           IIT Bhilai, Btech (2021-2025) <br />
           Computer Science and Engineering
@@ -25,9 +25,9 @@ export default function Info() {
             type="github"
             zIndex="3"
             style={{
-              height: 70,
-              width: 350,
-              fontSize: 20,
+              height: 50,
+              width: 230,
+              fontSize: 10,
               borderColor: "white",
             }}
             onPress={setToggle}

@@ -1,19 +1,83 @@
-.button {
-  height: 100%;
-  width: 500;
-}
-.go:hover {
-  cursor: pointer;
-  color: red;
-  border: 2px black;  
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 10px;
+  background-color: yellow;
+  font-size: 25px;
+  border-radius: 30px;
+  margin-top: 50;
+  margin: 0 auto;
 }
 
-.ul{
-  background-Color: "yellow"
+.navbar-item {
+  cursor: pointer;
 }
-@media (max-width: 1200px) {
-  .ul {
+.navbar-item:hover {
+  border-bottom: 3px solid black; /* Add this line */
+}
+@media (max-width: 820px) {
+  .navbar {
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    width: 90vw;
   }
+
+  .navbar-dropdown {
+    display: none;
+  }
+
+  .navbar-item {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .navbar-item:last-child {
+    margin-bottom: 0;
+  }
+
+  .navbar-toggle {
+    display: block;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .navbar-toggle::after {
+    content: '\u25BE';
+    margin-left: 5px;
+  }
+
+  .navbar-toggle.active::after {
+    content: '\u25B4';
+  }
+
+  .navbar-toggle + .navbar-dropdown {
+    display: none;
+  }
+
+  .navbar-toggle.active + .navbar-dropdown {
+    display: block;
+  }
+}
+
+.navbar-dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: yellow;
+  padding: 10px;
+  border-radius: 0 0 30px 30px;
+}
+
+.navbar-dropdown-item {
+  cursor: pointer;
+  padding: 5px 0;
+  text-align: center;
+}
+
+.navbar-dropdown-item:hover {
+  background-color: #ffff99;
 }

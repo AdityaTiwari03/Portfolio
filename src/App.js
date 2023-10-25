@@ -7,8 +7,7 @@ function App() {
   return (
     <div className="App">
       <UpTab />
-      <Info />
-      <Img /> <br /> <br /> <br /> <br /> 
+      <Info /> 
        
       <MiddleSection />
     </div>

@@ -2,7 +2,7 @@ import React, {useState, Component, useEffect } from "react";
 import "./App.css";
 function MiddleSection() {
   return (
-      <div style={{ fontSize: 30, marginLeft: 130, marginRight: 130, color: "white"}}>
+      <div style={{ fontSize: 30, marginLeft: 100, marginRight: 100, color: "white", marginTop: "110vh"}}>
         
         <div id="home">
           <p>
@@ -34,6 +34,7 @@ function MiddleSection() {
         <br />
         <div id="project">
           <h2>PROJECTS</h2>
+          I had internship experience as a Software Developer in Finorator Comapny.
           This is my personal Project that I developed using React, CSS and
           Javascript. I know Hindi and English. <br />
           <br />
@@ -42,8 +43,8 @@ function MiddleSection() {
             Go to my Project
           </button> 
         </div>{" "}
-       <div className="do">
-        <div id="skill" className="skill" style={{flex: "50%", minWidth: 400}}>
+       <div className="do" >
+        <div id="skill" className="skill" style={{flex: "50%"}}>
           <h2>SKILLS</h2>
           <ul>
             <li>HTML</li>
@@ -60,7 +61,7 @@ function MiddleSection() {
           </ul>
         </div>
 
-        <div id="extra" className="extra" style={{flex: "50%", minWidth: 400}}>
+        <div id="extra" className="extra" style={{flex: "50%",}}>
           <h2> Extra Curricular </h2>
           <ul>
             <li>

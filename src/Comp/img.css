@@ -1,16 +1,4 @@
 .image{
-position: "flex";
-margin-left: 50vw;
-height: 90vh;
-flex-shrink: initial;
-right: 1vw;
-max-width: 700;
-align-self: right;
-left: 40%;
-width: 750;
+width: 500px;
+z-index: -1;
 }
-@media (max-width: 1500px) {
-    .image {
-      margin-left: 0%;
-    }
-  }

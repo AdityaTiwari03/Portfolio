@@ -1,18 +1,27 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import { Link } from "react-scroll";
 import "./tabcss.css";
+
 export default function UpTab() {
   const [navbarHeight, setNavbarHeight] = useState('20px');
-
-  const handleClick = () => {
+  window.onscroll = function (event) {
+    var scroll = window.scrollY
+    if (scroll < 500){
+      document.getElementById("navbar").style.backgroundColor = "";
+    }   
+    else {
+      document.getElementById("navbar").style.backgroundColor = "black";
+    }
+  } 
+    const handleClick = () => {
     setNavbarHeight((prevHeight) => (prevHeight === '30px' ? 'fit-content' : '30px'));
     
   };
 
   return (
     <div className="main">
-          <br/>
-      <ul className="navbar" style={{ height: navbarHeight }} >
+      <div className="container-fluid">
+        <ul className="navbar" id ="navbar">
         <li className="navbar-item">
           <Link activeClass="active" to="home" spy={true} smooth={true} onClick={handleClick}>
             Overview
@@ -35,12 +44,12 @@ export default function UpTab() {
         </li>
         <li className="navbar-item">
           <Link to="extra" spy={true} smooth={true}>
-            ExtraCurricular Activities
+            ExtraCurricular
           </Link>
         </li>
         <li className="navbar-item">
           <Link to="Personal" spy={true} smooth={true}>
-            Personal Information
+            Personal Info
           </Link>
         </li>
         <li className="navbar-item">
@@ -49,6 +58,7 @@ export default function UpTab() {
           </Link>
         </li>
       </ul>
+      </div>
     </div>
   );
 };

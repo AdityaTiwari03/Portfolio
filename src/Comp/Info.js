@@ -1,50 +1,28 @@
 import React, {useState, useToggle} from "react";
-import { AwesomeButton } from "react-awesome-button";
 import "react-awesome-button/dist/styles.css";
 import pdf from "./Resume_Aditya.pdf";
 import  "./info.css"
-import Img from "./img";
 export default function Info() {
-  const useToggle = (initialState) => {
-    const [toggleValue, setToggleValue] = useState(initialState);
-    const toggler = () => { setToggleValue(!toggleValue) };
-    return [toggleValue, toggler]
-  };
-  const [toggle, setToggle] = useToggle();
-
+  function Open(){
+  }
    return (
-    <div className="content">
+    <div className="portfolio-container">
       <div className="info-container">
-        <p className="name">Aditya Tiwari</p>
-        <p className="info">
+        <div className="basic-info">
+        <h1 className="name">Aditya Tiwari</h1>
+        <h3 className="info">
           IIT Bhilai, Btech (2021-2025) <br />
           Computer Science and Engineering
-        </p>
+        </h3>
         <div className="button-container">
-          <AwesomeButton
-            type="github"
-            zIndex="3"
-            style={{
-              height: 50,
-              width: 230,
-              fontSize: 10,
-              borderColor: "white",
-            }}
-            onPress={setToggle}
-          >
-            <h1>View Portfolio</h1>
-          </AwesomeButton>
+        <a href={pdf} without rel="noopener noreferrer"  target="_blank">
+      <button trailingIcon="picture_as_pdf"  className="pdf" label="Resume">
+        View Portfolio
+      </button>
+   </a>        </div>
         </div>
-        {toggle && ( 
-        <iframe
-          src={pdf}
-          id="pdf"
-          className="pdf-frame"
-        ></iframe>
-      )}
 
       </div>
-      <div className="photo"><Img /></div>
     </div>
   
  );

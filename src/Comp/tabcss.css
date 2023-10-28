@@ -1,19 +1,33 @@
 .navbar {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   list-style: none;
-  padding: 10px;
-  background-color: yellow;
-  font-size: 18px;
-  border-radius: 7px;
-  margin: 0 auto;
+  padding: 20px 10px;
+  z-index: 99;
 }
 
 .navbar-item {
   cursor: pointer;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin: 0 20px;
+  color: #0095fc;
+  transition-duration: 550ms;
+}
+.navbar-item:last-child{
+  margin: 0;
 }
 .navbar-item:hover {
-  border-bottom: 3px solid black; /* Add this line */
+  font-size: 15px; /* Add this line */
+  font-weight: bolder; /* Add this line */
+}
+.navbar-item a {
+  color: #0095fc;
+}
+.main {
+  position: fixed;
+  width: 100%;
 }
 @media (max-width: 820px) {
   .navbar {

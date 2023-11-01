@@ -15,7 +15,7 @@
   color: #0095fc;
   transition-duration: 550ms;
 }
-.navbar-item:last-child{
+.navbar-item:last-child {
   margin: 0;
 }
 .navbar-item:hover {
@@ -33,7 +33,6 @@
   .navbar {
     flex-direction: column;
     align-items: center;
-    width: 90vw;
   }
 
   .navbar-dropdown {
@@ -57,12 +56,12 @@
   }
 
   .navbar-toggle::after {
-    content: '\u25BE';
+    content: "\u25BE";
     margin-left: 5px;
   }
 
   .navbar-toggle.active::after {
-    content: '\u25B4';
+    content: "\u25B4";
   }
 
   .navbar-toggle + .navbar-dropdown {

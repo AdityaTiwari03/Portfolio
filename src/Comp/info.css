@@ -83,11 +83,19 @@
     flex-direction: column;
     left: 0;
   }
-
+  .portfolio-container .info-container .name {
+    font-size: 40px;
+  }
+  .portfolio-container .info-container .info {
+    font-size: 20px;
+  }
   .info-container {
     width: 100%;
   }
-
+  .pdf {
+    padding: 4px;
+    font-size: medium;
+  }
   .info {
     margin: 2 auto;
     font-size: 30px;

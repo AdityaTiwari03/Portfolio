@@ -5,6 +5,7 @@
   list-style: none;
   padding: 20px 10px;
   z-index: 99;
+  background-color: black;
 }
 
 .navbar-item {

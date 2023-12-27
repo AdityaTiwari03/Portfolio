@@ -40,7 +40,7 @@ function MiddleSection() {
             June 2020 - April 2021{" "}
           </li>
           <li>
-            <b>Indian Institute of Technology, Bhilai </b>, Raipur — Btech
+            <b>Indian Institute of Technology, Bhilai </b>, Bhilai — Btech
             (Computer Science and Engineering) <br />
             November 2021 - PRESENT{" "}
           </li>

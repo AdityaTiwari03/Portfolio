@@ -7,8 +7,8 @@ export default function Info() {
     <div className="portfolio-container">
       <div className="info-container">
         <div className="basic-info">
-          <h1 className="name">Aditya Tiwari</h1>
           <h3 className="info">
+            <h1 className="name">Aditya Tiwari</h1>
             IIT Bhilai, Btech (2021-2025) <br />
             Computer Science and Engineering
           </h3>
